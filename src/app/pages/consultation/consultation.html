@@ -1,0 +1,145 @@
+
+<section class="consultation-hero">
+
+  <div class="container text-center">
+
+    <h1>Online Consultation</h1>
+
+    <p>Connect with doctors anytime from anywhere</p>
+
+  </div>
+
+</section>
+
+<section class="consultation-section">
+
+  <div class="container">
+
+    <div class="row justify-content-center">
+
+      <div class="col-lg-8">
+
+        <form [formGroup]="consultationForm"
+              (ngSubmit)="onSubmit()"
+              class="consultation-form">
+
+          <div class="row">
+
+            <!-- Name -->
+            <div class="col-md-6 mb-3">
+
+              <input type="text"
+                     class="form-control"
+                     placeholder="Your Name"
+                     formControlName="name">
+
+              <small *ngIf="submitted && f['name'].errors"
+                     class="text-danger">
+                Name is required
+              </small>
+
+            </div>
+
+            <!-- Email -->
+            <div class="col-md-6 mb-3">
+
+              <input type="email"
+                     class="form-control"
+                     placeholder="Email"
+                     formControlName="email">
+
+              <small *ngIf="submitted && f['email'].errors"
+                     class="text-danger">
+                Valid email required
+              </small>
+
+            </div>
+
+            <!-- Doctor -->
+            <div class="col-md-6 mb-3">
+
+              <select class="form-control" formControlName="doctor">
+
+                <option value="">Select Doctor</option>
+
+                <option *ngFor="let d of doctors">{{d}}</option>
+
+              </select>
+
+            </div>
+
+            <!-- Department -->
+            <div class="col-md-6 mb-3">
+
+              <select class="form-control" formControlName="department">
+
+                <option value="">Select Department</option>
+
+                <option *ngFor="let d of departments">{{d}}</option>
+
+              </select>
+
+            </div>
+
+            <!-- Type -->
+            <div class="col-md-6 mb-3">
+
+              <select class="form-control" formControlName="type">
+
+                <option value="">Consultation Type</option>
+
+                <option *ngFor="let t of types">{{t}}</option>
+
+              </select>
+
+            </div>
+
+            <!-- Date -->
+            <div class="col-md-6 mb-3">
+
+              <input type="date"
+                     class="form-control"
+                     formControlName="date">
+
+            </div>
+
+            <!-- Time -->
+            <div class="col-md-6 mb-3">
+
+              <input type="time"
+                     class="form-control"
+                     formControlName="time">
+
+            </div>
+
+            <!-- Message -->
+            <div class="col-md-12 mb-3">
+
+              <textarea rows="4"
+                        class="form-control"
+                        placeholder="Describe your problem"
+                        formControlName="message">
+              </textarea>
+
+            </div>
+
+            <!-- Submit -->
+            <div class="col-md-12 text-center">
+
+              <button class="btn btn-primary btn-lg">
+                Start Consultation
+              </button>
+
+            </div>
+
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

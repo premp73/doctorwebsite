@@ -1,0 +1,43 @@
+
+<section class="services-hero">
+
+  <div class="container text-center">
+
+    <h1>Our Medical Services</h1>
+
+    <p>We provide world-class healthcare across all departments</p>
+
+  </div>
+
+</section>
+
+<section class="services-section">
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-3 col-md-6 mb-4"
+           *ngFor="let s of services">
+
+        <div class="service-card">
+
+          <i class="fas {{s.icon}} service-icon"></i>
+
+          <h4>{{s.title}}</h4>
+
+          <p>{{s.desc}}</p>
+
+          <a routerLink="/appointment" class="btn btn-primary btn-sm">
+            Book Now
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

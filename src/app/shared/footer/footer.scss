@@ -1,0 +1,253 @@
+.footer {
+
+    background: linear-gradient(135deg,#0d6efd,#00b4d8);
+
+    color: white;
+
+    padding: 70px 0 20px;
+
+}
+
+.footer-logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:20px;
+
+}
+
+.footer-logo i{
+
+    font-size:45px;
+
+}
+
+.footer-logo h3{
+
+    margin:0;
+
+    font-weight:bold;
+
+}
+
+.footer p{
+
+    color:#f3f3f3;
+
+    line-height:1.8;
+
+}
+
+.footer h5{
+
+    margin-bottom:20px;
+
+    font-weight:bold;
+
+}
+
+.footer ul{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.footer ul li{
+
+    margin-bottom:12px;
+
+    transition:.3s;
+
+    cursor:pointer;
+
+}
+
+.footer ul li:hover{
+
+    transform:translateX(6px);
+
+}
+
+.footer ul li a{
+
+    color:white;
+
+    text-decoration:none;
+
+}
+
+.footer ul li a:hover{
+
+    color:#ffe082;
+
+}
+
+.social-icons{
+
+    margin-top:25px;
+
+}
+
+.social-icons a{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    background:white;
+
+    color:#0d6efd;
+
+    margin-right:10px;
+
+    transition:.4s;
+
+    text-decoration:none;
+
+}
+
+.social-icons a:hover{
+
+    transform:translateY(-6px);
+
+    background:#ffe082;
+
+}
+
+.newsletter{
+
+    text-align:center;
+
+    margin-top:30px;
+
+}
+
+.newsletter h4{
+
+    margin-bottom:20px;
+
+}
+
+.newsletter-box{
+
+    display:flex;
+
+    justify-content:center;
+
+    max-width:650px;
+
+    margin:auto;
+
+}
+
+.newsletter input{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:40px 0 0 40px;
+
+}
+
+.newsletter button{
+
+    border:none;
+
+    padding:15px 30px;
+
+    background:#ff9800;
+
+    color:white;
+
+    font-weight:bold;
+
+    border-radius:0 40px 40px 0;
+
+    transition:.3s;
+
+}
+
+.newsletter button:hover{
+
+    background:#fb8c00;
+
+}
+
+hr{
+
+    border-color:rgba(255,255,255,.25);
+
+    margin:35px 0;
+
+}
+
+.copyright{
+
+    text-align:center;
+
+    font-size:15px;
+
+}
+
+@media(max-width:768px){
+
+.newsletter-box{
+
+    flex-direction:column;
+
+}
+
+.newsletter input{
+
+    border-radius:40px;
+
+    margin-bottom:15px;
+
+}
+
+.newsletter button{
+
+    border-radius:40px;
+
+}
+
+.footer{
+
+    text-align:center;
+
+}
+
+.footer-logo{
+
+    justify-content:center;
+
+}
+
+.social-icons{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+}

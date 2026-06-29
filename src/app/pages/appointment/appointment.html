@@ -1,0 +1,160 @@
+
+<!-- ================= HERO ================= -->
+
+<section class="appointment-hero">
+
+  <div class="container text-center">
+
+    <h1>Book Appointment</h1>
+
+    <p>Schedule your visit with our expert doctors</p>
+
+  </div>
+
+</section>
+
+<!-- ================= FORM ================= -->
+
+<section class="appointment-section">
+
+  <div class="container">
+
+    <div class="row justify-content-center">
+
+      <div class="col-lg-8">
+
+        <form [formGroup]="appointmentForm"
+              (ngSubmit)="onSubmit()"
+              class="appointment-form">
+
+          <div class="row">
+
+            <!-- Name -->
+            <div class="col-md-6 mb-3">
+
+              <input type="text"
+                     class="form-control"
+                     placeholder="Full Name"
+                     formControlName="name">
+
+              <small *ngIf="submitted && f['name'].errors"
+                     class="text-danger">
+                Name is required
+              </small>
+
+            </div>
+
+            <!-- Email -->
+            <div class="col-md-6 mb-3">
+
+              <input type="email"
+                     class="form-control"
+                     placeholder="Email"
+                     formControlName="email">
+
+              <small *ngIf="submitted && f['email'].errors"
+                     class="text-danger">
+                Valid email is required
+              </small>
+
+            </div>
+
+            <!-- Phone -->
+            <div class="col-md-6 mb-3">
+
+              <input type="text"
+                     class="form-control"
+                     placeholder="Phone Number"
+                     formControlName="phone">
+
+              <small *ngIf="submitted && f['phone'].errors"
+                     class="text-danger">
+                Phone is required
+              </small>
+
+            </div>
+
+            <!-- Department -->
+            <div class="col-md-6 mb-3">
+
+              <select class="form-control"
+                      formControlName="department">
+
+                <option value="">Select Department</option>
+
+                <option *ngFor="let d of departments">
+                  {{d}}
+                </option>
+
+              </select>
+
+            </div>
+
+            <!-- Doctor -->
+            <div class="col-md-6 mb-3">
+
+              <select class="form-control"
+                      formControlName="doctor">
+
+                <option value="">Select Doctor</option>
+
+                <option *ngFor="let doc of doctors">
+                  {{doc}}
+                </option>
+
+              </select>
+
+            </div>
+
+            <!-- Date -->
+            <div class="col-md-6 mb-3">
+
+              <input type="date"
+                     class="form-control"
+                     formControlName="date">
+
+            </div>
+
+            <!-- Time -->
+            <div class="col-md-6 mb-3">
+
+              <input type="time"
+                     class="form-control"
+                     formControlName="time">
+
+            </div>
+
+            <!-- Message -->
+            <div class="col-md-12 mb-3">
+
+              <textarea class="form-control"
+                        rows="4"
+                        placeholder="Describe your problem"
+                        formControlName="message">
+              </textarea>
+
+            </div>
+
+            <!-- Submit -->
+            <div class="col-md-12 text-center">
+
+              <button type="submit"
+                      class="btn btn-primary btn-lg">
+
+                Book Appointment
+
+              </button>
+
+            </div>
+
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

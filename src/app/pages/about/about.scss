@@ -1,0 +1,86 @@
+
+/* ================= HERO ================= */
+
+.about-hero {
+  background: linear-gradient(135deg, #0d6efd, #00b4d8);
+  color: white;
+  padding: 80px 0;
+}
+
+/* ================= INTRO ================= */
+
+.about-intro {
+  padding: 80px 0;
+}
+
+.about-intro ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-intro ul li {
+  padding: 8px 0;
+}
+
+/* ================= STATS ================= */
+
+.about-stats {
+  background: #f8fbff;
+  padding: 60px 0;
+}
+
+.about-stats h2 {
+  font-size: 40px;
+  color: #0d6efd;
+  font-weight: bold;
+}
+
+/* ================= MISSION ================= */
+
+.mission-section {
+  padding: 80px 0;
+}
+
+.mission-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  height: 100%;
+}
+
+/* ================= TEAM ================= */
+
+.team-section {
+  padding: 80px 0;
+  background: #f8fbff;
+}
+
+.team-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+}
+
+.team-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+/* ================= CTA ================= */
+
+.about-cta {
+  background: linear-gradient(135deg, #0d6efd, #00b4d8);
+  color: white;
+  padding: 70px 0;
+}

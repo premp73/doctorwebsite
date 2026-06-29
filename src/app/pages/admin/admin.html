@@ -1,0 +1,105 @@
+
+<div class="admin-container">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+
+    <h2>DoctorCare</h2>
+
+    <ul>
+      <li routerLink="/admin"><i class="fas fa-chart-line"></i> Dashboard</li>
+      <li><i class="fas fa-user-doctor"></i> Doctors</li>
+      <li><i class="fas fa-calendar-check"></i> Appointments</li>
+      <li><i class="fas fa-users"></i> Patients</li>
+      <li routerLink="/"><i class="fas fa-sign-out-alt"></i> Exit</li>
+    </ul>
+
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="main">
+
+    <h1>Admin Dashboard</h1>
+
+    <!-- STATS -->
+    <div class="stats">
+
+      <div class="card" *ngFor="let s of stats">
+
+        <i class="fas {{s.icon}}"></i>
+
+        <h3>{{s.value}}</h3>
+
+        <p>{{s.title}}</p>
+
+      </div>
+
+    </div>
+
+    <!-- DOCTORS TABLE -->
+    <div class="section">
+
+      <h2>Doctors</h2>
+
+      <table>
+
+        <tr>
+          <th>Name</th>
+          <th>Department</th>
+          <th>Status</th>
+        </tr>
+
+        <tr *ngFor="let d of doctors">
+
+          <td>{{d.name}}</td>
+          <td>{{d.dept}}</td>
+          <td>
+            <span [class.active]="d.status === 'Active'">
+              {{d.status}}
+            </span>
+          </td>
+
+        </tr>
+
+      </table>
+
+    </div>
+
+    <!-- APPOINTMENTS -->
+    <div class="section">
+
+      <h2>Appointments</h2>
+
+      <table>
+
+        <tr>
+          <th>Patient</th>
+          <th>Doctor</th>
+          <th>Date</th>
+          <th>Status</th>
+        </tr>
+
+        <tr *ngFor="let a of appointments">
+
+          <td>{{a.patient}}</td>
+          <td>{{a.doctor}}</td>
+          <td>{{a.date}}</td>
+          <td>{{a.status}}</td>
+
+        </tr>
+
+      </table>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- 🔥 Next Features:
+🔐 Admin Login + JWT protection
+📊 Charts (Revenue, Patients)
+➕ Add/Edit/Delete Doctors (CRUD)
+📅 Approve/Reject Appointments
+🗄 Backend (Spring Boot / Node.js)
+💾 Database integration -->

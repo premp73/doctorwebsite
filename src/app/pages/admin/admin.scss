@@ -1,0 +1,90 @@
+
+/* ================= LAYOUT ================= */
+
+.admin-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial;
+}
+
+/* ================= SIDEBAR ================= */
+
+.sidebar {
+  width: 250px;
+  background: #0d6efd;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sidebar ul li:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* ================= MAIN ================= */
+
+.main {
+  flex: 1;
+  padding: 20px;
+  background: #f5f7fb;
+}
+
+/* ================= STATS ================= */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card i {
+  font-size: 25px;
+  color: #0d6efd;
+}
+
+/* ================= TABLE ================= */
+
+.section {
+  margin-top: 40px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.active {
+  color: green;
+  font-weight: bold;
+}
