@@ -27,10 +27,7 @@
 
     <!-- Mobile Button -->
 
-    <button
-      class="navbar-toggler"
-      type="button"
-      (click)="toggleMenu()">
+    <button class="navbar-toggler" type="button" (click)="toggleMenu()">
 
       <span class="navbar-toggler-icon"></span>
 
@@ -38,19 +35,13 @@
 
     <!-- Menu -->
 
-    <div
-      class="collapse navbar-collapse"
-      [class.show]="isMenuOpen">
+    <div class="collapse navbar-collapse" [class.show]="isMenuOpen">
 
       <ul class="navbar-nav ms-auto align-items-lg-center">
 
         <li class="nav-item">
 
-          <a
-            routerLink="/"
-            routerLinkActive="active"
-            [routerLinkActiveOptions]="{exact:true}"
-            class="nav-link"
+          <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" class="nav-link"
             (click)="closeMenu()">
 
             Home
@@ -61,11 +52,7 @@
 
         <li class="nav-item">
 
-          <a
-            routerLink="/about"
-            routerLinkActive="active"
-            class="nav-link"
-            (click)="closeMenu()">
+          <a routerLink="/about" routerLinkActive="active" class="nav-link" (click)="closeMenu()">
 
             About
 
@@ -77,23 +64,24 @@
 
         <li class="nav-item dropdown">
 
-          <a
+          <!-- <a
             class="nav-link dropdown-toggle"
             href="#"
             data-bs-toggle="dropdown">
 
             Services
 
+          </a> -->
+          <a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Services
           </a>
 
           <ul class="dropdown-menu">
 
             <li>
 
-              <a
-                class="dropdown-item"
-                routerLink="/services"
-                (click)="closeMenu()">
+              <a class="dropdown-item" routerLink="/services" (click)="closeMenu()">
 
                 All Services
 
@@ -103,8 +91,7 @@
 
             <li>
 
-              <a class="dropdown-item" routerLink="/cardiology"
-                (click)="closeMenu()">
+              <a class="dropdown-item" routerLink="/cardiology" (click)="closeMenu()">
 
                 Cardiology
 
@@ -114,8 +101,7 @@
 
             <li>
 
-              <a class="dropdown-item" routerLink="/neurology"
-                (click)="closeMenu()">
+              <a class="dropdown-item" routerLink="/neurology" (click)="closeMenu()">
 
                 Neurology
 
@@ -149,11 +135,7 @@
 
         <li class="nav-item">
 
-          <a
-            routerLink="/doctors"
-            routerLinkActive="active"
-            class="nav-link"
-            (click)="closeMenu()">
+          <a routerLink="/doctors" routerLinkActive="active" class="nav-link" (click)="closeMenu()">
 
             Doctors
 
@@ -163,11 +145,7 @@
 
         <li class="nav-item">
 
-          <a
-            routerLink="/consultation"
-            routerLinkActive="active"
-            class="nav-link"
-            (click)="closeMenu()">
+          <a routerLink="/consultation" routerLinkActive="active" class="nav-link" (click)="closeMenu()">
 
             Consultation
 
@@ -177,11 +155,7 @@
 
         <li class="nav-item">
 
-          <a
-            routerLink="/contact"
-            routerLinkActive="active"
-            class="nav-link"
-            (click)="closeMenu()">
+          <a routerLink="/contact" routerLinkActive="active" class="nav-link" (click)="closeMenu()">
 
             Contact
 
@@ -193,10 +167,7 @@
 
         <li class="nav-item ms-lg-3">
 
-          <a
-            routerLink="/appointment"
-            class="btn appointment-btn"
-            (click)="closeMenu()">
+          <a routerLink="/appointment" class="btn appointment-btn" (click)="closeMenu()">
 
             <i class="fas fa-calendar-check me-2"></i>
 
